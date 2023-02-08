@@ -1,12 +1,11 @@
 import { useCallback } from 'react';
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router';
-import { ComponentData, ComponentType, isButtonComponentData, isImageComponentData, isWeatherComponentData } from './app.types';
+import { ComponentData, ComponentType, isImageComponentData, isWeatherComponentData } from './app.types';
 import './app.css';
 
 import Weather from './components/Weather/Weather';
 import Image from './components/Image/Image';
-import Button from './components/Button/Button';
 
 const App = () => {
     const { id } = useParams<{ id: string }>();
